@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: spinningCube
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":30.26705,"y":-58.7296},"zoom":0.7,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-403.0,"y":-82.0},"guid":"0730e38b-0e59-4f2d-b223-05fa68fb90ec","$version":"A","$type":"Bolt.Update","$id":"9"},{"chainable":false,"member":{"name":"Rotate","parameterTypes":["System.Single","System.Single","System.Single"],"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null,"%xAngle":{"$content":0.0,"$type":"System.Single"},"%yAngle":{"$content":1.0,"$type":"System.Single"},"%zAngle":{"$content":0.0,"$type":"System.Single"}},"position":{"x":-244.0,"y":-85.0},"guid":"c80da22b-8b8f-4e08-af05-969b9d121b37","$version":"A","$type":"Bolt.InvokeMember","$id":"11"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"speed","$type":"System.String"},"object":null},"position":{"x":-436.0,"y":29.0},"guid":"bea4ca39-ced1-4aa3-92a9-c02d57d3afe3","$version":"A","$type":"Bolt.GetVariable","$id":"14"},{"coroutine":false,"defaultValues":{"key":{"$content":"Space","$type":"UnityEngine.KeyCode"},"action":{"$content":"Down","$type":"Ludiq.PressState"}},"position":{"x":-525.0,"y":154.0},"guid":"627b22d7-e06c-45a6-8427-1344379fea8b","$version":"A","$type":"Bolt.OnKeyboardInput","$id":"16"},{"chainable":false,"member":{"name":"AddForce","parameterTypes":["UnityEngine.Vector3","UnityEngine.ForceMode"],"targetType":"UnityEngine.Rigidbody","targetTypeName":"UnityEngine.Rigidbody","$version":"A"},"defaultValues":{"target":null,"%force":{"x":0.0,"y":50.0,"z":0.0,"$type":"UnityEngine.Vector3"},"%mode":{"$content":"Impulse","$type":"UnityEngine.ForceMode"}},"position":{"x":-224.0,"y":157.0},"guid":"a764b64e-30e4-47cb-8dce-268883e305b2","$version":"A","$type":"Bolt.InvokeMember","$id":"18"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"11"},"destinationKey":"enter","guid":"5839c4d3-2937-4ec0-8360-cf4b8e711b42","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"trigger","destinationUnit":{"$ref":"18"},"destinationKey":"enter","guid":"ecf81bc6-4c11-452c-9a68-04ae6bbee495","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"value","destinationUnit":{"$ref":"11"},"destinationKey":"%yAngle","guid":"1ee02254-75a1-405a-b0ec-63f59c314aa8","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
